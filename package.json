@@ -1,0 +1,21 @@
+{
+  "name": "rest-api",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "nodemon build/index.js",
+    "build": "tsc --watch --preserveWatchOutput",
+    "dev": "concurrently \"npm run build\" \"npm start\" "
+  },
+  "author": "HarcosOc",
+  "license": "MIT",
+  "dependencies": {
+    "@types/express": "^4.17.6",
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "concurrently": "^5.2.0",
+    "nodemon": "^2.0.4",
+    "typescript": "^3.9.3"
+  }
+}
